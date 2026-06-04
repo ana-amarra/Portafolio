@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>by amarra/logotipos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="img/logobyamarra.png" alt="by amarra">
+        </a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">
+            <i class="ri-menu-line"></i>
+        </label>
+
+        <nav class="nav">
+            <a href="index.html">inicio</a>
+            <a href="portafolio.html">portafolio</a>
+            <a href="sobremi.html">sobre mí</a>
+            <a href="servicios.html">lo que hago</a>
+            <a href="contacto.html">contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="pagina-hero">
+            <p class="etiqueta">logotipos</p>
+            <h1>Diseño de logotipos y wordmarks.</h1>
+            <p>
+                Exploraciones de símbolos, marcas tipográficas
+                y sistemas visuales simples, memorables y funcionales.
+            </p>
+        </section>
+
+        <section class="seccion">
+            <div class="grid-proyectos">
+
+                <article class="proyecto">
+
+                    <div class="imagen-placeholder">
+                        <button class="abrir-modal" onclick="abrirModal('img/logotipo1.jpg')">
+
+                            <img src="img/logotipo1.jpg" alt="Marca Premium">
+
+                        </button>
+                    </div>
+
+                    <h3>Marca Premium</h3>
+                    <p>
+                        Proyecto enfocado en desarrollar un logotipo elegante y contemporáneo
+                        que transmitiera espiritualidad, exclusividad y conexión emocional.
+                    </p>
+
+                </article>
+
+                <article class="proyecto">
+
+                    <div class="imagen-placeholder">
+                        <button class="abrir-modal" onclick="abrirModal('img/logotipo2.jpg')">
+
+                            <img src="img/logotipo2.jpg" alt="Evento Inmersivo">
+
+                        </button>
+                    </div>
+
+                    <h3>Evento Inmersivo</h3>
+                    <p>
+                        Diseño de identidad gráfica para un encuentro académico centrado
+                        en experiencias inmersivas y tecnología.
+                    </p>
+
+                </article>
+
+                <article class="proyecto">
+
+                    <div class="imagen-placeholder">
+                        <button class="abrir-modal" onclick="abrirModal('img/logotipo3.jpg')">
+
+                            <img src="img/logotipo3.jpg" alt="Estudio Creativo">
+
+                        </button>
+                    </div>
+
+                    <h3>Estudio Creativo</h3>
+                    <p>
+                        Creación de logotipo e identidad visual para una empresa creativa
+                        enfocada en diseño y comunicación visual.
+                    </p>
+
+                </article>
+
+            </div>
+
+            <div class="centro">
+                <a href="portafolio.html" class="boton boton-secundario">volver al portafolio</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-card">
+
+            <div class="footer-top">
+
+                <img src="img/footer.png" alt="by amarra" class="logo-footer">
+
+                <div class="footer-info">
+                    <p class="footer-frase">
+                        marca personal · diseño visual · storytelling
+                    </p>
+
+                    <a href="mailto:anaamarra224@gmail.com" class="footer-email">
+                        anaamarra224@gmail.com
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer-linea"></div>
+
+            <div class="footer-bottom">
+
+                <div class="footer-links">
+                    <a href="index.html">inicio</a>
+                    <a href="portafolio.html">portafolio</a>
+                    <a href="sobremi.html">sobre mí</a>
+                    <a href="servicios.html">lo que hago</a>
+                    <a href="contacto.html">contacto</a>
+                </div>
+
+                <div class="footer-redes">
+
+                    <a href="https://instagram.com/ana.amarra" target="_blank">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    <a href="https://www.behance.net/anasofa9" target="_blank">
+                        <i class="ri-behance-line"></i>
+                    </a>
+
+                    <a href="https://wa.me/50247788111" target="_blank">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 By Amarra. Marca personal de Ana Sofía Amarra.
+            </p>
+
+        </div>
+    </footer>
+
+    <div id="modal-imagen" class="modal-imagen">
+
+        <div class="modal-contenido">
+
+            <button class="cerrar-modal" onclick="cerrarModal()">
+                ×
+            </button>
+
+            <img id="imagen-modal" src="" alt="">
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function abrirModal(imagen) {
+
+            document.getElementById("modal-imagen").style.display = "flex";
+
+            document.getElementById("imagen-modal").src = imagen;
+        }
+
+        function cerrarModal() {
+
+            document.getElementById("modal-imagen").style.display = "none";
+        }
+
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

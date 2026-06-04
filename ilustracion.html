@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>by amarra/ilustracion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="img/logobyamarra.png" alt="by amarra">
+        </a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">
+            <i class="ri-menu-line"></i>
+        </label>
+
+        <nav class="nav">
+            <a href="index.html">inicio</a>
+            <a href="portafolio.html">portafolio</a>
+            <a href="sobremi.html">sobre mí</a>
+            <a href="servicios.html">lo que hago</a>
+            <a href="contacto.html">contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="pagina-hero">
+            <p class="etiqueta">ilustración</p>
+            <h1>Ilustraciones con concepto, detalle y personalidad.</h1>
+            <p>
+                Proyectos desarrollados con técnicas tradicionales y digitales, enfocados en comunicar ideas, emociones
+                y mensajes visuales de forma creativa.
+            </p>
+        </section>
+
+        <section class="seccion">
+            <div class="grid-proyectos">
+
+                <!-- DEFORESTACIÓN -->
+
+                <article class="proyecto">
+
+                    <div class="imagen-placeholder">
+                        <button class="abrir-modal" onclick="abrirModal('img/deforestacion.jpg')">
+                            <img src="img/deforestacion.jpg" alt="Ilustración para campaña de deforestación">
+                        </button>
+                    </div>
+
+                    <h3>Pequeñas acciones</h3>
+                    <span class="categoria-proyecto">
+                        Campaña de concientización
+                    </span>
+                    <p>
+                        Ilustración realizada con crayón y marcador para una campaña de concientización sobre la
+                        deforestación,
+                        comunicando cómo pequeñas acciones pueden generar un impacto ambiental significativo.
+                    </p>
+                </article>
+
+                <!-- POSTALES INSECTOS -->
+
+                <article class="proyecto">
+
+                    <div class="imagen-placeholder">
+                        <button class="abrir-modal" onclick="abrirModal('img/ilustracionbotanica.jpg')">
+                            <img src="img/ilustracionbotanica.jpg" alt="Postales ilustradas para museo de insectos">
+                        </button>
+                    </div>
+
+                    <h3>Postales</h3>
+                    <span class="categoria-proyecto">
+                        Ilustración en acuarela
+                    </span>
+                    <p>
+                        Creación de postales ilustradas a mano con acuarela para un museo de insectos,
+                        integrando detalle, color y elementos naturales para crear piezas visuales coleccionables.
+                    </p>
+
+                </article>
+
+                <!-- WONDERLAND -->
+
+                <article class="proyecto">
+
+                    <div class="imagen-placeholder">
+                        <button class="abrir-modal" onclick="abrirModal('img/ilustracionpublicitaria.jpg')">
+                            <img src="img/ilustracionpublicitaria.jpg" alt="Wonderland - Ilustración publicitaria">
+                        </button>
+                    </div>
+
+                    <h3>Wonderland</h3>
+                    <span class="categoria-proyecto">
+                        Ilustración publicitaria
+                    </span>
+                    <p>
+                        Póster publicitario ilustrado con crayón de madera para una juguetería ficticia,
+                        creado para transmitir fantasía, calidez y una experiencia visual dirigida al público infantil.
+                    </p>
+
+                </article>
+
+                <!-- PERSONAJE -->
+
+                <article class="proyecto">
+
+                    <div class="imagen-placeholder">
+                        <button class="abrir-modal" onclick="abrirModal('img/ilustraciondigital.jpeg')">
+                            <img src="img/ilustraciondigital.jpeg" alt="Ilustración digital de personajes">
+                        </button>
+                    </div>
+
+                    <h3>Personajes</h3>
+                    <span class="categoria-proyecto">
+                        Ilustración digital
+                    </span>
+                    <p>
+                        Creación de un personaje original desarrollado mediante ilustración digital, explorando diseño
+                        visual, personalidad y expresiones.
+                    </p>
+
+                </article>
+
+            </div>
+
+            <div class="centro">
+                <a href="portafolio.html" class="boton boton-secundario">volver al portafolio</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-card">
+
+            <div class="footer-top">
+
+                <img src="img/footer.png" alt="by amarra" class="logo-footer">
+
+                <div class="footer-info">
+                    <p class="footer-frase">
+                        marca personal · diseño visual · storytelling
+                    </p>
+
+                    <a href="mailto:anaamarra224@gmail.com" class="footer-email">
+                        anaamarra224@gmail.com
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer-linea"></div>
+
+            <div class="footer-bottom">
+
+                <div class="footer-links">
+                    <a href="index.html">inicio</a>
+                    <a href="portafolio.html">portafolio</a>
+                    <a href="sobremi.html">sobre mí</a>
+                    <a href="servicios.html">lo que hago</a>
+                    <a href="contacto.html">contacto</a>
+                </div>
+
+                <div class="footer-redes">
+
+                    <a href="https://instagram.com/ana.amarra" target="_blank">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    <a href="https://www.behance.net/anasofa9" target="_blank">
+                        <i class="ri-behance-line"></i>
+                    </a>
+
+                    <a href="https://wa.me/50247788111" target="_blank">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 By Amarra. Marca personal de Ana Sofía Amarra.
+            </p>
+
+        </div>
+    </footer>
+
+    <div id="modal-imagen" class="modal-imagen">
+
+        <div class="modal-contenido">
+
+            <button class="cerrar-modal" onclick="cerrarModal()">
+                ×
+            </button>
+
+            <img id="imagen-modal" src="" alt="">
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function abrirModal(imagen) {
+
+            document.getElementById("modal-imagen").style.display = "flex";
+
+            document.getElementById("imagen-modal").src = imagen;
+        }
+
+        function cerrarModal() {
+
+            document.getElementById("modal-imagen").style.display = "none";
+        }
+
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

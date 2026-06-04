@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>by amarra/editorial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="img/logobyamarra.png" alt="by amarra">
+        </a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">
+            <i class="ri-menu-line"></i>
+        </label>
+
+        <nav class="nav">
+            <a href="index.html">inicio</a>
+            <a href="portafolio.html">portafolio</a>
+            <a href="sobremi.html">sobre mí</a>
+            <a href="servicios.html">lo que hago</a>
+            <a href="contacto.html">contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="pagina-hero">
+            <p class="etiqueta">editorial</p>
+            <h1>Diseño editorial que organiza y comunica.</h1>
+            <p>
+                Proyectos enfocados en la diagramación, composición visual y organización de contenido para crear
+                experiencias de lectura atractivas y funcionales.
+            </p>
+        </section>
+
+        <section class="seccion">
+            <div class="grid-proyectos">
+
+                <!-- LUNA DE XELAJÚ -->
+
+                <article class="proyecto">
+
+                    <div class="imagen-placeholder">
+
+                        <button class="abrir-modal" onclick="abrirModal('img/disenodelibro.jpg')">
+
+                            <img src="img/disenodelibro.jpg" alt="Luna de Xelajú - Diseño editorial infantil">
+
+                        </button>
+
+                    </div>
+
+                    <h3>Luna de Xelajú</h3>
+
+                    <span class="categoria-proyecto">
+                        Diseño editorial infantil
+                    </span>
+
+                    <p>
+                        Diseño e ilustración de un libro infantil inspirado en canciones tradicionales guatemaltecas,
+                        creado para acercar a los niños a la cultura nacional mediante recursos visuales llamativos
+                        y narrativas accesibles.
+                    </p>
+
+                </article>
+
+                <!-- MOBY DICK -->
+
+                <article class="proyecto">
+
+                    <div class="imagen-placeholder">
+
+                        <button class="abrir-modal" onclick="abrirModal('img/disenodeportadas.jpg')">
+
+                            <img src="img/disenodeportadas.jpg" alt="Moby Dick - Rediseño de portada editorial">
+
+                        </button>
+
+                    </div>
+
+                    <h3>Moby Dick</h3>
+
+                    <span class="categoria-proyecto">
+                        Rediseño de portada editorial
+                    </span>
+
+                    <p>
+                        Propuesta de rediseño para una obra literaria clásica, explorando una nueva interpretación
+                        visual que conserva la esencia de la historia mediante ilustración y composición gráfica.
+                    </p>
+
+                </article>
+
+                <!-- REVISTA MAX -->
+
+                <article class="proyecto">
+
+                    <div class="imagen-placeholder">
+
+                        <button class="abrir-modal" onclick="abrirModal('img/revista.jpg')">
+
+                            <img src="img/revista.jpg" alt="Revista MAX - Diseño editorial">
+
+                        </button>
+
+                    </div>
+
+                    <h3>Revista MAX</h3>
+
+                    <span class="categoria-proyecto">
+                        Diseño y diagramación editorial
+                    </span>
+
+                    <p>
+                        Diseño de revista comercial enfocado en la organización visual de productos, jerarquización
+                        de información y construcción de una experiencia de lectura clara y atractiva para el
+                        consumidor.
+                    </p>
+
+                </article>
+            </div>
+
+            <div class="centro">
+
+                <a href="portafolio.html" class="boton boton-secundario">
+
+                    Volver al portafolio
+
+                </a>
+
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-card">
+
+            <div class="footer-top">
+
+                <img src="img/footer.png" alt="by amarra" class="logo-footer">
+
+                <div class="footer-info">
+                    <p class="footer-frase">
+                        marca personal · diseño visual · storytelling
+                    </p>
+
+                    <a href="mailto:anaamarra224@gmail.com" class="footer-email">
+                        anaamarra224@gmail.com
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer-linea"></div>
+
+            <div class="footer-bottom">
+
+                <div class="footer-links">
+                    <a href="index.html">inicio</a>
+                    <a href="portafolio.html">portafolio</a>
+                    <a href="sobremi.html">sobre mí</a>
+                    <a href="servicios.html">lo que hago</a>
+                    <a href="contacto.html">contacto</a>
+                </div>
+
+                <div class="footer-redes">
+
+                    <a href="https://instagram.com/ana.amarra" target="_blank">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    <a href="https://www.behance.net/anasofa9" target="_blank">
+                        <i class="ri-behance-line"></i>
+                    </a>
+
+                    <a href="https://wa.me/50247788111" target="_blank">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 By Amarra. Marca personal de Ana Sofía Amarra.
+            </p>
+
+        </div>
+    </footer>
+
+    <div id="modal-imagen" class="modal-imagen">
+
+        <div class="modal-contenido">
+
+            <button class="cerrar-modal" onclick="cerrarModal()">
+                ×
+            </button>
+
+            <img id="imagen-modal" src="" alt="">
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function abrirModal(imagen) {
+
+            document.getElementById("modal-imagen").style.display = "flex";
+
+            document.getElementById("imagen-modal").src = imagen;
+        }
+
+        function cerrarModal() {
+
+            document.getElementById("modal-imagen").style.display = "none";
+        }
+
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
