@@ -60,7 +60,7 @@
 
                     <div class="imagen-placeholder">
 
-                        <button class="abrir-modal" onclick="abrirModal('img/logotipo1.jpg')">
+                        <button class="abrir-modal" onclick="abrirModal(['img/logotipo1.jpg', 'img/carrusel/origen-2.jpg', 'img/carrusel/origen-3.jpg', 'img/carrusel/origen-4.jpg', 'img/carrusel/origen-5.jpg', 'img/carrusel/origen-6.jpg', 'img/carrusel/origen-7.jpg'], 'Origen')">
 
                             <img src="img/logotipo1.jpg" alt="Origen - Construcción de logotipo">
 
@@ -87,7 +87,7 @@
 
                     <div class="imagen-placeholder">
 
-                        <button class="abrir-modal" onclick="abrirModal('img/papeleria.JPG')">
+                        <button class="abrir-modal" onclick="abrirModal(['img/papeleria.JPG', 'img/carrusel/concepto-prisma-2.jpg'], 'Concepto Prisma')">
 
                             <img src="img/papeleria.JPG" alt="Concepto Prisma - Papelería corporativa">
 
@@ -114,7 +114,7 @@
 
                     <div class="imagen-placeholder">
 
-                        <button class="abrir-modal" onclick="abrirModal('img/packaging.jpg')">
+                        <button class="abrir-modal" onclick="abrirModal(['img/packaging.jpg', 'img/carrusel/museo-susurro-2.jpg'], 'Museo Susurro del Agua')">
 
                             <img src="img/packaging.jpg" alt="Museo Susurro del Agua - Packaging">
 
@@ -141,7 +141,7 @@
 
                     <div class="imagen-placeholder">
 
-                        <button class="abrir-modal" onclick="abrirModal('img/merchandising.jpg')">
+                        <button class="abrir-modal" onclick="abrirModal(['img/merchandising.jpg', 'img/carrusel/orgullo-latino-branding-2.jpg', 'img/carrusel/orgullo-latino-branding-3.jpg'], 'Orgullo Latino')">
 
                             <img src="img/merchandising.jpg" alt="Orgullo Latino - Merchandising">
 
@@ -234,36 +234,32 @@
         </div>
     </footer>
 
-    <div id="modal-imagen" class="modal-imagen">
+    <div id="modal-imagen" class="modal-imagen" role="dialog" aria-modal="true" aria-label="Galería del proyecto">
 
         <div class="modal-contenido">
 
-            <button class="cerrar-modal" onclick="cerrarModal()">
+            <button class="cerrar-modal" onclick="cerrarModal()" aria-label="Cerrar galería">
                 ×
             </button>
 
-            <img id="imagen-modal" src="" alt="">
+            <button id="carrusel-anterior" class="control-carrusel anterior" onclick="cambiarImagen(-1)" aria-label="Imagen anterior">
+                <i class="ri-arrow-left-s-line"></i>
+            </button>
+
+            <img id="imagen-modal" src="" alt="Imagen del proyecto">
+
+            <button id="carrusel-siguiente" class="control-carrusel siguiente" onclick="cambiarImagen(1)" aria-label="Imagen siguiente">
+                <i class="ri-arrow-right-s-line"></i>
+            </button>
+
+            <div id="indicadores-carrusel" class="indicadores-carrusel" aria-label="Imágenes del proyecto"></div>
+            <span id="contador-carrusel" class="contador-carrusel" aria-live="polite"></span>
 
         </div>
 
     </div>
 
-    <script>
-
-        function abrirModal(imagen) {
-
-            document.getElementById("modal-imagen").style.display = "flex";
-
-            document.getElementById("imagen-modal").src = imagen;
-        }
-
-        function cerrarModal() {
-
-            document.getElementById("modal-imagen").style.display = "none";
-        }
-
-    </script>
-
+    <script src="js/carrusel.js"></script>
     <script src="js/main.js"></script>
 </body>
 
