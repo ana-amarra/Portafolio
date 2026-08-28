@@ -363,6 +363,14 @@ p {
   padding: 40px;
 }
 
+.modal-imagen.activo {
+  display: flex;
+}
+
+body.modal-abierto {
+  overflow: hidden;
+}
+
 .modal-contenido {
   position: relative;
 
@@ -388,6 +396,12 @@ p {
   border-radius: 20px;
 
   display: block;
+
+  transition: opacity .18s ease;
+}
+
+.modal-contenido img.cambiando {
+  opacity: .35;
 }
 
 .cerrar-modal {
@@ -409,6 +423,124 @@ p {
   font-weight: 800;
 
   cursor: pointer;
+
+  z-index: 3;
+}
+
+.control-carrusel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid var(--negro);
+  border-radius: 50%;
+  background: var(--blanco);
+  color: var(--negro);
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.control-carrusel:hover {
+  background: var(--rosa);
+  transform: translateY(-50%) scale(1.06);
+}
+
+.control-carrusel.anterior {
+  left: 32px;
+}
+
+.control-carrusel.siguiente {
+  right: 32px;
+}
+
+.contador-carrusel {
+  position: absolute;
+  right: 28px;
+  bottom: 28px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(17, 17, 17, .78);
+  color: var(--blanco);
+  font-size: .82rem;
+  font-weight: 700;
+}
+
+.indicadores-carrusel {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 7px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .88);
+}
+
+.indicadores-carrusel button {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: 1px solid var(--negro);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.indicadores-carrusel button.activo {
+  background: var(--rosa);
+}
+
+@media (max-width: 700px) {
+  .modal-imagen {
+    padding: 18px;
+  }
+
+  .modal-contenido {
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .modal-contenido img {
+    max-height: 76vh;
+    border-radius: 14px;
+  }
+
+  .cerrar-modal {
+    top: -14px;
+    right: -10px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .control-carrusel {
+    width: 42px;
+    height: 42px;
+    font-size: 1.65rem;
+  }
+
+  .control-carrusel.anterior {
+    left: 18px;
+  }
+
+  .control-carrusel.siguiente {
+    right: 18px;
+  }
+
+  .indicadores-carrusel {
+    bottom: 20px;
+    max-width: 65%;
+  }
+
+  .contador-carrusel {
+    right: 18px;
+    bottom: 18px;
+  }
 }
 
 .categoria-proyecto{
